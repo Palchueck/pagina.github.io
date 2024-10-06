@@ -1,0 +1,109 @@
+/* Estilo para el fondo borroso */
+.foggy-background {
+    background: url('../imagenes/fondo.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+}
+
+
+
+/* Estilo para el encabezado y pie de página */
+header {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+}
+
+footer {
+    background-color: #2d3748; /* Color de fondo del pie de página */
+}
+
+/* Estilo para los enlaces en el pie de página */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #63b3ed; /* Cambia el color al pasar el mouse */
+}
+
+#venConocenos {
+    background-color: #1d4ed8;
+    color: white;
+    padding: .5%;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 2px 4px 6px #2d3748;
+}
+button#venConocenos:hover {
+    background-color: #0f3398;
+    transform: translateY(-2px);
+    transition: 1s;
+    box-shadow: 4px 6px 8px #2d3748;
+}
+
+#producto {
+    color: black; /* Color del texto */
+    padding: 5px 20px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    font-weight: 600; /* Negrita */
+    font-size: 1rem; /* Tamaño de fuente */
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: all 0.3s ease; /* Transición suave */
+    border: 2px solid #2563eb;
+    z-index: 1;
+}
+
+#producto:hover {
+    background-color: #5f8ef3d6; /* Color de fondo al pasar el mouse */
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7); 
+    transform: translateY(-2px); /* Efecto de elevación */
+    z-index: 1;
+}
+
+  
+  #producto svg {
+    position: absolute;
+    right: 5px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1;
+  }
+/* Estilo para el menú desplegable */
+.group:hover .hidden {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.group .hidden {
+    display: none;
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.group:hover .hidden, .group .hidden:hover {
+    display: flex;
+}
+
+.group:hover .group-hover\:block {
+    display: flex;
+    z-index: 1;
+}
+#producto {
+    display: flex;
+    align-items: center;
+    gap: .5rem; /* add some gap between the text and icon */
+    z-index: 1;
+  }

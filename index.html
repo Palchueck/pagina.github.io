@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Polar del Pacífico</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="imagenes/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/stylesIndex.css">
+</head>
+<body class="font-roboto">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="flex items-center">
+                <img src="imagenes/logo.png" alt="Logo" class="h-12 w-12 mr-2"/>
+                <span class="text-lg font-semibold">Clima Polar del Pacífico</span>
+            </div>
+            <nav class="flex items-center space-x-6">
+                <!-- Menú desplegable de Servicios -->
+                <div class="relative group">
+                    <button id="producto">
+                        <span>Servicios</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Menú desplegable -->
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg hidden group-hover:block">
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">Servicio 1</a>
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">Servicio 2</a>
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">Servicio 3</a>
+                    </div>
+                </div>
+                
+
+                <!-- Botón de Productos -->
+                <a href="#" id="producto">Productos</a>
+
+                <!-- Botón de Inicio de sesión -->
+                <a href="#" id="producto">Inicio sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative">
+            <div class="foggy-background w-full" style="height: 600px;"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <img 
+                    src="imagenes/fondo.png" 
+                    alt="Aire acondicionado en una habitación con plantas" 
+                    class="w-[800px] h-[400px] object-cover rounded-lg shadow-lg"
+                />
+            </div>
+        </section>
+        <div class="bg-white bg-opacity-75 py-4">
+            <h1 class="text-center text-2xl font-bold main-title" style="font-size: 45px;">CLIMA POLAR DEL PACIFICO</h1>
+        </div>
+        <!-- Botón -->
+        <div class="bg-white py-4">
+            <div class="container mx-auto text-center">
+                <button id="venConocenos" class="boton-mejorado">¡Ven a conocernos!</button> <!-- Botón mejorado -->
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="container mx-auto text-center py-8">
+            <h1 class="text-4xl font-bold mb-8">Un poco de nuestros productos</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img alt="Serie Lo7 (Minisplit Lo7)" src="https://storage.googleapis.com/a1aa/image/uWbebaoI12QMEqhs1rTegdla5axt0Und9VmYgTxIMnb4wkjTA.jpg" width="200" height="200"/>
+                    <p class="mt-4">Serie Lo7 (Minisplit Lo7) <a class="text-blue-600" href="#">Link</a></p>
+                </div>
+                <div class="text-center">
+                    <img alt="Serie CL Mini-Split" src="https://storage.googleapis.com/a1aa/image/L531cOALb87JN1remhTqoyfHRUAgrMWiBuPeEDAvVceUDTOOB.jpg" width="200" height="200"/>
+                    <p class="mt-4">Serie CL Mini-Split <a class="text-blue-600" href="#">Link</a></p>
+                </div>
+                <div class="text-center">
+                    <img alt="Máquina de hielo Manitowoc NEO UD-0140A" src="https://storage.googleapis.com/a1aa/image/liQr4hF4R1pYLRQcpS5oyhUZHh3uwVbkRFO5pQJeXIKaYyxJA.jpg" width="200" height="200"/>
+                    <p class="mt-4">Máquina de hielo Manitowoc NEO UD-0140A <a class="text-blue-600" href="#">Link</a></p>
+                </div>
+                <div class="text-center">
+                    <img alt="VRV W Heat Recovery" src="https://storage.googleapis.com/a1aa/image/KS58LeVkGZUdRKQ7fAjDjrSkHj8SDRjfz23sLmZF7MQvhJHnA.jpg" width="200" height= "200"/>
+                    <p class= "mt -4">VRV W Heat Recovery<a href="#"class = "text-blue -600">Link</a></p >
+                </div >
+            </div >
+        </div >
+
+    </main >
+
+     <!-- Footer -->
+     <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a class="mx-2 text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2 text-white" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="mx-2 text-white" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="mx-2 text-white" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-sm">©2023 Nombre de la Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+</body >
+</html >
